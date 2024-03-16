@@ -1,0 +1,680 @@
+:root {
+    --navbar-color: #D9D9D9;
+    --tentara-color: #D5FFDD;
+    --peternak-color: #FFF4DC;
+    --pramugari-color: #FFCED7;
+    --fotografer-color: #E2F2FF;
+    --dokter-pilot-ilmuan-color: #F4F4F4;
+    --pembalap-astronout-color: #F2F2F2;
+  
+    --border-color: #D8D6C1;
+  
+    --tentara-button: #399349;
+    --peternak-button: #E29A00;
+    --pramugari-button: #FF5573;
+    --fotografer-button: #3279AF;
+    --same-color: #D8D6C1;
+  
+    --responsive-same: #E9E8E2;
+  
+    --pembalap-button : #E36415;
+    --pembalap-color : #FFDBC5;
+  
+    --astronout-button : #275E87;
+    --astronout-color : #8FC5ED;
+    ;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--navbar-color);
+    padding: 10px 0 10px 0;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .flex-item p {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .flex-container {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .flex-item {
+    margin-right: 20px;
+  }
+  
+  .section {
+    padding: 20px 0 0 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  h1 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  [class*="col-"] {
+    float: left;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    list-style-type: none;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  
+  .menu li:hover {
+    background-color: #0099cc;
+  }
+  
+  .flex-container-img {
+    position: relative;
+    display: flex;
+    padding: 0;
+  }
+  
+  .card-parent {
+    position: relative;
+    width: 100%;
+    height: 230px;
+  }
+  
+  .card-1 {
+    background-color: var(--tentara-color);
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .flex-container-img img {
+    position: relative;
+    top: -53px;
+  }
+  
+  .title {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 32px;
+  }
+  
+  .flex-container-img p {
+    font-family: Poppins;
+    font-weight: 500;
+  }
+  
+  .card-1 button {
+    width: 100%;
+    color: white;
+    background-color: var(--tentara-button);
+    border-radius: 15px;
+    border: 0;
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  .card-1 button:hover {
+    width: 100%;
+    color: white;
+    background-color: var(--tentara-button);
+    border-radius: 15px;
+    opacity: 90%;
+    border: 0;
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  .col-1 {
+    width: 50%;
+  }
+  
+  .description {
+    margin-top: 50px;
+    width: 240px;
+  }
+  
+  .card-2 {
+    padding-top: 10px;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: var(--peternak-color);
+    border-radius: 20px;
+  }
+  
+  .card-25 {
+    padding-top: 10px;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: var(--pramugari-color);
+    border-radius: 20px;
+  }
+  
+  .card-2 button {
+    position: absolute;
+    width: 75%;
+    margin: 10px;
+    color: white;
+    background-color: var(--tentara-button);
+    border-radius: 15px;
+    border: 0;
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  .card-25 button {
+    position: absolute;
+    width: 75%;
+    margin: 10px;
+    color: white;
+    background-color: var(--pramugari-button);
+    border-radius: 15px;
+    border: 0;
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  .card-2 button:hover {
+    position: absolute;
+    width: 75%;
+    margin: 10px;
+    color: white;
+    background-color: var(--tentara-button);
+    opacity: 90%;
+    border-radius: 15px;
+    border: 0;
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  
+  .card-3 {
+    background-color: var(--fotografer-color);
+    margin: 20px 0 0 20px;
+    border-radius: 20px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .title-2 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+  }
+  
+  .card-3 p {
+    margin: 12px 0 13px;
+  }
+  
+  .card-3 button {
+    width: 90%;
+    margin: 10px;
+    color: white;
+    background-color: var(--fotografer-button);
+    border-radius: 15px;
+    border: 0;
+    font-size: 20px;
+  }
+  
+  .card-3 button:hover {
+    width: 90%;
+    margin: 10px;
+    color: white;
+    background-color: var(--fotografer-button);
+    opacity: 90%;
+    border-radius: 15px;
+    border: 0;
+    font-size: 20px;
+  }
+  
+  .card-4 {
+    width: 423px;
+    height: 96px;
+    align-items: center;
+    display: flex;
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    background-color: white;
+    border-radius: 25px;
+    margin: 20px;
+  }
+  
+  .card-4>div {
+    align-items: end;
+    justify-content: end;
+  }
+  
+  .card-4 p {
+    font-size: 20px;
+  }
+  
+  .card-4 div button {
+    width: 149px;
+    height: 22;
+    color: white;
+    background-color: var(--same-color);
+    border-radius: 15px;
+    border: 0;
+    font-size: 12px;
+  }
+  
+  .card-4 div button:hover {
+    width: 149px;
+    height: 22;
+    color: white;
+    background-color: var(--same-color);
+    opacity: 90%;
+    border-radius: 15px;
+    border: 0;
+    font-size: 12px;
+  }
+  
+  .card-5 div {
+    align-items: end;
+    justify-content: center;
+  }
+  
+  .card-5 button {
+    width: 100px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: var(--same-color);
+    border: 0;
+    color: white;
+  }
+  
+  .card-6 div {
+    align-items: end;
+    justify-content: center;
+  }
+  
+  .card-6 button {
+    width: 100px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: var(--same-color);
+    border: 0;
+    color: white;
+  }
+  
+  .same-card {
+    width: 500px;
+    height: 50%;
+    background-color: var(--dokter-pilot-ilmuan-color);
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 20px;
+  }
+  
+  .parent-latest {
+    background-color: var(--pembalap-astronout-color);
+    margin: 20px;
+    width: 500px;
+    height: 202px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 425px) {
+    [class*="col-"] {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      float: none;
+    }
+  
+    [class="row-"] {
+      width: 80%;
+    }
+  
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Poppins;
+      box-sizing: border-box;
+    }
+  
+    .menu {
+      margin: auto;
+    }
+  
+    .header {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 999;
+    }
+  
+    .section {
+      padding-top: 60px;
+      text-align: center;
+      margin: auto;
+      display: flex;
+    }
+  
+    .section h1 {
+      font-size: 32px;
+      padding-left: 35px;
+      font-weight: 700;
+    }
+  
+    .flex-container {
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+  
+    .card-1 {
+      display: flex;
+      flex-direction: column;
+      margin-left: 5px;
+      width: 289px;
+      height: auto;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+    }
+  
+    .card-1 img {
+      position: relative;
+    }
+  
+    .card-1 .flex-container-img {
+      position: relative;
+    }
+    
+    .card-1 button {
+      position: absolute;
+      bottom: 99px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      margin-top: 10px;
+    }
+    
+    .flex-container-img {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .description {
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .card-2 {
+      width: 289px;
+      height: 221px;
+      margin: 20px;
+      display: flex;
+      margin-right: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-top: 175px;
+    }
+  
+    .card-2 img {
+      align-items: end;
+      justify-content: end;
+      width: 218px;
+    }
+  
+    .card-2 button {
+      bottom: 0px;
+    }
+  
+    .card-25 {
+      width: 289px;
+      height: 221px;
+      margin: 20px;
+      display: flex;
+      margin-right: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-top: 40px;
+    }
+  
+    .card-25 img {
+      align-items: end;
+      justify-content: end;
+      width: 215px;
+    }
+  
+    .card-25 button {
+      bottom: 0px;
+    }
+  
+    .card-3 {
+      width: 289px;
+      height: auto;
+      margin: 20px;
+      display: flex;
+      margin-right: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-top: 80px;
+    }
+  
+    .card-3 img {
+      position: relative;
+      width: 215px;
+      height: auto;
+      margin-left: 0;
+      top: -60px;
+    }
+  
+    .card-3 button {
+      position: absolute;
+      bottom: 116px;
+      left: 45%;
+      transform: translateX(-50%);
+      width: 205px;
+      height: 40px;
+      margin-top: 10px;
+    }
+  
+    .card-3 p {
+      margin: 0;
+    }
+  
+    .same-card {
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card-4 {
+      position: relative;
+      width: 289px;
+      height: auto;
+      margin-top: 50px;
+      border: 0;
+      background-color: var(--responsive-same);
+    }
+  
+    .card-4 div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .card-4 div button {
+      width: 205px;
+      height: 40px;
+      font-size: 20px;
+    }
+  
+    .card-4 div p {
+      display: none;
+    }
+  
+    .card-4 img {
+      align-items: end;
+      justify-content: end;
+      width: 215px;
+      bottom: 0;
+    }
+  
+    .parent-latest {
+      display: flex;
+      flex-direction: column;
+      background-color: transparent;
+      position: relative;
+      margin-top: 200px;
+      left: 4%;
+    }
+  
+    .card-5 {
+      position: relative;
+      display: flex;
+      width: 289px;
+      height: 221px;
+      flex-direction: column;
+      background-color: var(--pembalap-color);
+      margin-bottom: 20px;
+      border-radius: 20px;
+      padding: 10px;
+    }
+  
+    .card-5 div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+  
+    .card-5 button {
+      position: absolute;
+      width: 80%;
+      margin-top: 10px;
+      bottom: 10px;
+      background-color: var(--pembalap-button);
+      color: white;
+      height: 40px;
+      font-size: 20px;
+    }
+  
+    .card-5 p {
+      display: none;
+    }
+  
+    .card-5 img {
+      width: 209.06px;
+      height: auto;
+      margin-bottom: 10px;
+      margin-left: 0;
+    }
+  
+    .card-6 div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+  
+    .card-6 {
+      position: relative;
+      display: flex;
+      width: 289px;
+      height: 221px;
+      flex-direction: column;
+      background-color: var(--astronout-color);
+      margin-bottom: 20px;
+      border-radius: 20px;
+      padding: 10px;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+  
+    .card-6 img {
+      width: 209.06px;
+      height: auto;
+      margin-bottom: 10px;
+      margin-left: 0;
+      bottom: 0;
+    }
+  
+    .card-6 button {
+      position: absolute;
+      width: 80%;
+      height: 40px;
+      margin-top: 10px;
+      bottom: 10px;
+      background-color: var(--astronout-button);
+      color: white;
+      font-size: 20px;
+    }
+  
+    .card-6 p {
+      display: none;
+    }
+  }
